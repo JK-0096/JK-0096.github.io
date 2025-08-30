@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-    background: #003366; /* navy blue */
+    background: #0077cc; /* navy blue */
     color: white;
     text-align: center;
     padding: 2rem 1rem;
@@ -45,7 +45,7 @@ main {
 }
 
 main h2 {
-    color: #003366;
+    color: #0077cc;
     margin-bottom: 1rem;
     border-bottom: 2px solid #0077cc;
     padding-bottom: 0.3rem;
@@ -83,7 +83,7 @@ ul {
 
 /* Footer */
 footer {
-    background: #003366;
+    background: #0077cc;
     color: white;
     text-align: center;
     padding: 1.2rem;
