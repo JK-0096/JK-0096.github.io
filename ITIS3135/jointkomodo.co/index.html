@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joint Komodo | Design and Development</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
-    <!-- Color Scheme from Coolors (https://coolors.co/palette/003b5c-0288d1-43a9cf-f2cb61-f9a828) -->
-    <!-- Color palette: Dark Blue, Light Blue, Sky Blue, Yellow, Orange -->
+    <!-- Color Scheme from Coolors (https://coolors.co/8b0000-d72638-ffffff-f5f5f5-222222) -->
+    <!-- Colors: Dark Red (#8B0000), Bright Red (#D72638), White (#FFFFFF), Light Gray (#F5F5F5), Black (#222222) -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9a828;
-            color: #003b5c;
+            background-color: #F5F5F5;
+            color: #222222;
         }
 
         header {
-            background-color: #003b5c;
-            color: white;
+            background-color: #8B0000;
+            color: #FFFFFF;
             padding: 1.5em 2em;
             display: flex;
             align-items: center;
@@ -32,19 +33,28 @@
             margin-right: 1em;
         }
 
-        header h1 {
+        /* Headings styled by classes (no qualified headings) */
+        .site-title {
             margin: 0;
             font-size: 2.5em;
         }
 
-        main {
-            padding: 2em;
+        .page-title {
+            font-size: 1.8em;
+            color: #D72638;
+            margin-bottom: 1em;
         }
 
-        h2 {
-            font-size: 1.8em;
-            color: #0288d1;
-            margin-bottom: 1em;
+        .section-heading {
+            font-size: 1.4em;
+            color: #8B0000;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        main {
+            padding: 2em;
+            background-color: #FFFFFF;
         }
 
         p {
@@ -58,36 +68,48 @@
         }
 
         ul li {
-            background-color: #43a9cf;
+            background-color: #D72638;
             margin: 1em 0;
             padding: 1em;
             border-radius: 8px;
             font-size: 1.1em;
-            color: white;
+            color: #FFFFFF; /* white text on bright red */
         }
 
         footer {
-            background-color: #003b5c;
-            color: white;
+            background-color: #8B0000;
+            color: #FFFFFF;
             text-align: center;
             padding: 1.5em;
-        }
-
-        footer .contact-info {
-            margin-top: 1.5em;
-            font-size: 1.1em;
         }
 
         footer p {
             margin: 0.5em 0;
         }
 
-        .contact-info a {
-            color: #f2cb61;
+        a {
+            color: #FFD1D1; /* light pinkish-white for good contrast */
+            font-weight: bold;
             text-decoration: none;
         }
 
+        a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 1.5em;
+            font-size: 1.1em;
+        }
+
+        .contact-info a {
+            color: #D72638;
+            font-weight: bold;
+        }
+
         .contact-info a:hover {
+            color: #8B0000;
             text-decoration: underline;
         }
     </style>
@@ -96,16 +118,16 @@
 <body>
 
     <header>
-        <!-- Logo image for Joint Komodo -->
-        <img src="https://via.placeholder.com/60" alt="Joint Komodo Logo">
-        <h1>Joint Komodo</h1>
+    <!-- Local logo file in images folder -->
+    <img src="../images/komodo.jpg" alt="Joint Komodo Logo" width="60" height="60">
+    <h1 class="site-title">Joint Komodo</h1>
     </header>
 
     <main>
-        <h2>Joint Komodo's Services</h2>
-        <p>At Joint Komodo, we specialize in exotic animals, and some people can even get one that is already professionaly trained as a pet.</p>
+        <h2 class="page-title">Joint Komodo's Services</h2>
+        <p>At Joint Komodo, we specialize in exotic animals, and some people can even get one that is already professionally trained as a pet.</p>
         
-        <h3>About Joint Komodo</h3>
+        <h3 class="section-heading">About Joint Komodo</h3>
         <ul>
             <li>Lots of variety on exotic animals.</li>
             <li>Attractions where you can feed these animals.</li>
@@ -116,7 +138,7 @@
             <li>Skilled animal doctors in case of emergency.</li>
         </ul>
 
-        <h3>Working Together</h3>
+        <h3 class="section-heading">Working Together</h3>
         <p>We believe in working closely with our clients to help their interests in raising interesting animals. If you have aspirations to have them as a companion, Joint Komodo may be the one for you.</p>
 
         <div class="contact-info">
@@ -127,16 +149,15 @@
     </main>
 
     <footer>
-    <p>&copy; 2025 Joint Komodo | <a href="jointkomodo.co/index.html">Page created by Joint Komodo</a> | "Live Exoticly"</p>
-    <!-- Validation Links -->
-    <p>
-        <a href="https://validator.w3.org/check?uri=referer">HTML Validator</a> | 
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=referer">CSS Validator</a>
-    </p>
+        <p>&copy; 2025 Joint Komodo | "Live Exoticly"</p>
+        <!-- Validation Links -->
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer">HTML Validator</a> | 
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=referer">CSS Validator</a>
+        </p>
+        <p><a href="http://jointkomodo.co">jointkomodo.co</a></p>
     </footer>
-
 
 </body>
 
 </html>
-
