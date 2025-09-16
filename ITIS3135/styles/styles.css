@@ -7,7 +7,10 @@
 
 /* Page Background and Font */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Bebas Neue", "Oswald", "Montserrat", "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-shadow: 0 2px 4px rgba(50, 119, 204, 0.12);
     line-height: 1.6;
     background-color: #f5f9ff; /* very light blue background */
     color: #1a1a1a;
@@ -130,4 +133,17 @@ footer p {
     margin-top: 0.8rem;
     font-weight: bold;
     color: #cce6ff;
+}
+
+a {
+    color: #32cd32; /* lime green */
+    transition: color 0.3s ease;
+}
+
+a:active {
+    color: #ff1a1a; /* bright red */
+}
+
+a:visited {
+    color: #ffe600; /* bright yellow */
 }
