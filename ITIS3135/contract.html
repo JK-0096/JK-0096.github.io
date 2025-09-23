@@ -7,20 +7,11 @@
         <title>John Kim | ITIS3135 | ITIS Contract</title>
         <link rel="stylesheet" href="styles/styles.css"> <!-- External CSS Link -->
         <script src="scripts/main.js" defer></script> <!-- External JS Link -->
+        <script src="scripts/HTMLInclude.min.js" defer></script>
     </head>
     <body>
         <header>
-            <h1>John Kim | ITIS3135 | Personal Webpage</h1>
-            <p class="tagline">Brief Introduction</p>
-            <footer>
-                <nav>
-                    <a href="./">Home</a>
-                    ||
-                    <a href="introduction.html">Introduction</a>
-                    ||
-                    <a href="contract.html">Contract</a>
-                </nav>
-            </footer>
+            <div data-include="components/header.html"></div>
         </header>
         
         <main>
@@ -30,12 +21,7 @@
         </main>
 
         <footer>
-        <p>Page built by Joint Komodo ©2025</p>
-
-            <div class="validation-links">
-                <a href="https://validator.w3.org/" target="_blank">HTML Validation</a>
-                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a>
-            </div>
+            <div data-include="components/footer.html"></div>
         </footer>
     </body>
     
