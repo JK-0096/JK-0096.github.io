@@ -12,18 +12,18 @@ body {
     letter-spacing: 0.08em;
     text-shadow: 0 2px 4px rgba(50, 119, 204, 0.12);
     line-height: 1.6;
-    background-color: #f5f9ff; /* very light blue background */
+    background-color: #f5f9ff;
     color: #1a1a1a;
     margin: 0;
 }
 
 /* Header */
 header {
-    background: #0077cc; /* navy blue */
+    background: #0077cc;
     color: white;
     text-align: center;
     padding: 2rem 1rem;
-    border-bottom: 5px solid #0077cc; /* lighter blue accent */
+    border-bottom: 5px solid #0077cc;
 }
 
 h1 {
@@ -34,13 +34,14 @@ h1 {
 header .tagline {
     font-style: italic;
     font-size: 1.1rem;
-    color: #cce6ff; /* soft blue */
+    color: #cce6ff;
 }
 
 /* Main Content */
 main {
-    max-width: 900px;
-    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1.5rem;
     background: white;
     border-radius: 10px;
@@ -128,13 +129,13 @@ footer .validation-links a:hover {
     color: white;
 }
 
-/* Copyright */
 footer p {
     margin-top: 0.8rem;
     font-weight: bold;
     color: #cce6ff;
 }
 
+/* Links */
 a {
     color: #32cd32; /* lime green */
     transition: color 0.3s ease;
@@ -146,4 +147,43 @@ a:active {
 
 a:visited {
     color: #ffe600; /* bright yellow */
+}
+
+
+/* Tablets */
+@media screen and (max-width: 980px) {
+    main {
+        width: 95%;
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 1.5rem 0.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    header .tagline {
+        font-size: 1rem;
+    }
+    main {
+        width: 98%;
+        padding: 1rem;
+    }
+    .profile-image {
+        max-width: 150px;
+    }
+    footer nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
