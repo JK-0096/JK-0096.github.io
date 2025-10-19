@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <title>Photography Hobby</title>
+
+  <style>
+    :root {
+      --bg-color: #1b262c;
+      --accent-color: #0f4c75;
+      --text-color: #f0f5f9;
+      --highlight: #3282b8;
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: var(--accent-color);
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.6rem;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 0.5rem;
+      font-size: 2.4rem;
+    }
+
+    figure {
+      text-align: center;
+      margin: 2rem auto;
+    }
+
+    figure img {
+      width: 80%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    figcaption {
+      font-style: italic;
+      margin-top: 0.5rem;
+      color: #dfe6e9;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.6rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 1.4rem;
+    }
+
+    footer a {
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--highlight);
+    }
+
+    .divider {
+      padding: 0 0.5rem;
+      color: var(--highlight);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("nav a");
+      const sections = document.querySelectorAll("section");
+
+      function showSection(id) {
+        sections.forEach((sec) => sec.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+      }
+
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const target = link.getAttribute("href").substring(1);
+          showSection(target);
+        });
+      });
+
+      showSection("what");
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>📸 Photography</h1>
+    <nav>
+      <a href="#what">What</a><span class="divider">✦</span>
+      <a href="#who">Who</a><span class="divider">✦</span>
+      <a href="#when">When</a><span class="divider">✦</span>
+      <a href="#where">Where</a><span class="divider">✦</span>
+      <a href="#how">How</a><span class="divider">✦</span>
+      <a href="#why">Why</a><span class="divider">✦</span>
+      <a href="#ai">AI Prompts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="what">
+      <h2>What Is Photography?</h2>
+      <p>Photography is the art of capturing light to create images that tell stories, preserve memories, and express creativity. It ranges from simple snapshots to complex compositions requiring technical mastery.</p>
+      <p>Whether digital or film, photography combines technology with artistry to showcase how we perceive the world around us.</p>
+      <figure>
+        <!-- Consider resizing this image to under 3840x2160 for optimization -->
+        <img src="../images/fuji.jpg" alt="Mount Fuji photo" width="1280" />
+        <figcaption>Mount Fuji at sunrise — captured through mindful timing and composition.</figcaption>
+      </figure>
+      <p><em>AI Prompt: "Describe a peaceful mountain sunrise photograph in one poetic sentence."</em></p>
+    </section>
+
+    <section id="who">
+      <h2>Who Enjoys Photography?</h2>
+      <p>From amateurs with smartphones to professionals with high-end cameras, anyone can enjoy photography. It’s inclusive, accessible, and rewarding.</p>
+      <p>Communities of photographers exist worldwide, both online and offline, sharing techniques and critiques.</p>
+      <figure>
+        <img src="../images/photographers.jpg" alt="Group of photographers" />
+        <figcaption>Enthusiasts capturing wildlife together in nature.</figcaption>
+      </figure>
+      <p><em>AI Prompt: "Explain how photographers often collaborate outdoors in one descriptive sentence."</em></p>
+    </section>
+
+    <section id="when">
+      <h2>When to Take Photos</h2>
+      <p>Lighting defines photography. The “golden hour” — just after sunrise or before sunset — gives soft, warm tones ideal for portraits and landscapes.</p>
+      <p>Night photography opens creative doors to starscapes and city lights, while cloudy days offer perfect diffused light for portraits.</p>
+      <figure>
+        <img src="../images/golden.jpg" alt="Golden hour forest" />
+        <figcaption>Golden hour — nature’s gift to photographers.</figcaption>
+      </figure>
+      <p><em>AI Prompt: "Summarize why golden hour lighting is special for photography in one sentence."</em></p>
+    </section>
+
+    <section id="where">
+      <h2>Where to Capture the Best Shots</h2>
+      <p>Great photos can be taken anywhere — from your backyard to the mountains of Japan. The key is to look for compelling light and composition.</p>
+      <p>Urban photographers find patterns in architecture, while nature photographers chase light in remote landscapes.</p>
+      <figure>
+        <img src="../images/skyline.jpg" alt="City skyline" />
+        <figcaption>City skylines — a playground of light, shapes, and reflections.</figcaption>
+      </figure>
+      <p><em>AI Prompt: "Describe why city skylines make excellent photography subjects."</em></p>
+    </section>
+
+    <section id="how">
+      <h2>How to Get Started</h2>
+      <p>Start with your phone camera. Learn about composition — the rule of thirds, leading lines, and framing. Practice regularly and experiment with light.</p>
+      <p>Editing tools can enhance color balance and mood, but the best photos start with good exposure and creative vision.</p>
+      <figure>
+        <img src="../images/camera.jpg" alt="Camera settings dial" />
+        <figcaption>Mastering your camera’s settings is key to creative control.</figcaption>
+      </figure>
+      <p><em>AI Prompt: "Explain why understanding camera settings helps photographers grow."</em></p>
+    </section>
+
+    <section id="why">
+      <h2>Why Photography Matters</h2>
+      <p>Photography connects us — across cultures, time, and emotion. It’s a universal language of storytelling.</p>
+      <p>Every image freezes a moment forever, offering perspective and reflection.</p>
+      <figure>
+        <img src="../images/photos.jpg" alt="Old photographs on a table" />
+        <figcaption>Photos preserve what words can’t fully express.</figcaption>
+      </figure>
+      <p><em>AI Prompt: "Describe why photography holds emotional value in one sentence."</em></p>
+    </section>
+
+    <section id="ai">
+      <h2>AI Prompts Used</h2>
+      <ul>
+        <li>“Describe a peaceful mountain sunrise photograph in one poetic sentence.”</li>
+        <li>“Explain how photographers often collaborate outdoors in one descriptive sentence.”</li>
+        <li>“Summarize why golden hour lighting is special for photography in one sentence.”</li>
+        <li>“Describe why city skylines make excellent photography subjects.”</li>
+        <li>“Explain why understanding camera settings helps photographers grow.”</li>
+        <li>“Describe why photography holds emotional value in one sentence.”</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://validator.w3.org/">HTML</a> |
+      <a href="https://jigsaw.w3.org/css-validator/">CSS</a> |
+      <a href="https://wave.webaim.org/">Accessibility</a>
+      <br />
+      Design by <a href="https://exampledesigns.com">Example Designs</a>
+    </p>
+  </footer>
+</body>
+</html>
+
