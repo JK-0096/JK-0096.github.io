@@ -120,10 +120,10 @@
       const links = document.querySelectorAll("nav a");
       const sections = document.querySelectorAll("section");
 
-      function showSection(id) {
+      const showSection = (id) => {
         sections.forEach((sec) => sec.classList.remove("active"));
         document.getElementById(id).classList.add("active");
-      }
+      };
 
       links.forEach((link) => {
         link.addEventListener("click", (e) => {
@@ -155,67 +155,66 @@
   <main>
     <section id="what">
       <h2>What Is Photography?</h2>
-      <p>Photography is the art of capturing light to create images that tell stories, preserve memories, and express creativity. It ranges from simple snapshots to complex compositions requiring technical mastery.</p>
-      <p>Whether digital or film, photography combines technology with artistry to showcase how we perceive the world around us.</p>
+      <p>Photography is about capturing light to tell stories, preserve moments, and show how we see the world. It blends creativity and technique, from simple snapshots to detailed compositions.</p>
+      <p>Both film and digital photography let people express their perspective through light, timing, and emotion.</p>
       <figure>
-        <!-- Consider resizing this image to under 3840x2160 for optimization -->
         <img src="../images/fuji.jpg" alt="Mount Fuji photo" width="1280" />
-        <figcaption>Mount Fuji at sunrise — captured through mindful timing and composition.</figcaption>
+        <figcaption>Mount Fuji at sunrise — a calm balance of light and reflection.</figcaption>
       </figure>
       <p><em>AI Prompt: "Describe a peaceful mountain sunrise photograph in one poetic sentence."</em></p>
     </section>
 
     <section id="who">
       <h2>Who Enjoys Photography?</h2>
-      <p>From amateurs with smartphones to professionals with high-end cameras, anyone can enjoy photography. It’s inclusive, accessible, and rewarding.</p>
-      <p>Communities of photographers exist worldwide, both online and offline, sharing techniques and critiques.</p>
+      <p>Anyone can enjoy photography — whether it’s using a phone or a professional camera. It’s a creative outlet open to everyone.</p>
+      <p>People often join online groups or local clubs to share their photos, learn, and inspire one another.</p>
       <figure>
         <img src="../images/photographers.jpg" alt="Group of photographers" />
-        <figcaption>Enthusiasts capturing wildlife together in nature.</figcaption>
+        <figcaption>Photographers working together to capture wildlife scenes.</figcaption>
       </figure>
       <p><em>AI Prompt: "Explain how photographers often collaborate outdoors in one descriptive sentence."</em></p>
     </section>
 
     <section id="when">
       <h2>When to Take Photos</h2>
-      <p>Lighting defines photography. The “golden hour” — just after sunrise or before sunset — gives soft, warm tones ideal for portraits and landscapes.</p>
-      <p>Night photography opens creative doors to starscapes and city lights, while cloudy days offer perfect diffused light for portraits.</p>
+      <p>The best light happens during “golden hour” — right after sunrise and before sunset. The soft glow adds warmth and texture to everything.</p>
+      <p>Even cloudy days are great for portraits since the light spreads evenly without harsh shadows.</p>
       <figure>
         <img src="../images/golden.jpg" alt="Golden hour forest" />
-        <figcaption>Golden hour — nature’s gift to photographers.</figcaption>
+        <figcaption>Golden hour brings out color and depth like no other time.</figcaption>
       </figure>
       <p><em>AI Prompt: "Summarize why golden hour lighting is special for photography in one sentence."</em></p>
     </section>
 
     <section id="where">
       <h2>Where to Capture the Best Shots</h2>
-      <p>Great photos can be taken anywhere — from your backyard to the mountains of Japan. The key is to look for compelling light and composition.</p>
-      <p>Urban photographers find patterns in architecture, while nature photographers chase light in remote landscapes.</p>
+      <p>Good photos can come from anywhere — your neighborhood, a park, or a mountain top. It’s all about finding interesting angles and light.</p>
+      <p>Cityscapes are great for symmetry and reflections, while nature offers peace and contrast.</p>
       <figure>
         <img src="../images/skyline.jpg" alt="City skyline" />
-        <figcaption>City skylines — a playground of light, shapes, and reflections.</figcaption>
+        <figcaption>City skylines create rhythm with lines, shapes, and lights.</figcaption>
       </figure>
       <p><em>AI Prompt: "Describe why city skylines make excellent photography subjects."</em></p>
     </section>
 
     <section id="how">
       <h2>How to Get Started</h2>
-      <p>Start with your phone camera. Learn about composition — the rule of thirds, leading lines, and framing. Practice regularly and experiment with light.</p>
-      <p>Editing tools can enhance color balance and mood, but the best photos start with good exposure and creative vision.</p>
+      <p>Start with what you have — even a phone camera works. Learn about framing and the rule of thirds, then just keep practicing.</p>
+      <p>Editing tools can help fine-tune your shots, but a great photo starts with composition and light.</p>
       <figure>
         <img src="../images/camera.jpg" alt="Camera settings dial" />
-        <figcaption>Mastering your camera’s settings is key to creative control.</figcaption>
+        <figcaption>Learning your camera’s settings gives you full creative control.</figcaption>
       </figure>
       <p><em>AI Prompt: "Explain why understanding camera settings helps photographers grow."</em></p>
     </section>
 
     <section id="why">
       <h2>Why Photography Matters</h2>
-      <p>Photography connects us — across cultures, time, and emotion. It’s a universal language of storytelling.</p>
-      <p>Every image freezes a moment forever, offering perspective and reflection.</p>
+      <p>Photos connect us and keep memories alive. They capture moments that words can’t always describe.</p>
+      <p>Every image tells a story — personal or universal — that helps us see life from another angle.</p>
       <figure>
         <img src="../images/photos.jpg" alt="Old photographs on a table" />
-        <figcaption>Photos preserve what words can’t fully express.</figcaption>
+        <figcaption>Old photos remind us where we’ve been and what matters most.</figcaption>
       </figure>
       <p><em>AI Prompt: "Describe why photography holds emotional value in one sentence."</em></p>
     </section>
