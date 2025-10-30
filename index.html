@@ -7,14 +7,12 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Page Background and Font */
         body {
             font-family: "Bebas Neue", "Oswald", "Montserrat", "Segoe UI", Arial, sans-serif;
             font-weight: 700;
@@ -23,10 +21,8 @@
             line-height: 1.6;
             background-color: #f5f9ff;
             color: #1a1a1a;
-            margin: 0;
         }
 
-        /* Header */
         header {
             background: #0077cc;
             color: white;
@@ -36,7 +32,7 @@
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: clamp(1.6rem, 2vw + 1rem, 2.2rem);
             margin-bottom: 0.5rem;
         }
 
@@ -46,14 +42,17 @@
             color: #cce6ff;
         }
 
-        /* Main Content */
         main {
-            max-width: 900px;
+            max-width: 1200px;
+            width: 90%;
             margin: 2rem auto;
-            padding: 1.5rem;
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        main .content-wrapper {
+            padding: 1.5rem; /* padding moved here to avoid width+padding issues */
         }
 
         h2 {
@@ -61,6 +60,7 @@
             margin-bottom: 1rem;
             border-bottom: 2px solid #0077cc;
             padding-bottom: 0.3rem;
+            font-size: clamp(1.3rem, 1.5vw + 1rem, 1.8rem); /* responsive font-size */
         }
 
         main section {
@@ -152,8 +152,41 @@
         a:visited {
             color: #ffe600;
         }
+
+        nav a {
+            display: inline-block;
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+
+        @media screen and (min-width: 981px) and (max-width: 1400px) {
+            main { width: 85%; }
+            main .content-wrapper { padding: 2rem; }
+            .profile-image { max-width: 180px; }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 980px) {
+            main { width: 90%; }
+            main .content-wrapper { padding: 1.5rem; }
+            .profile-image { max-width: 150px; }
+            nav a { display: block; margin: 0.5rem 0; }
+        }
+
+        @media screen and (min-width: 370px) and (max-width: 600px) {
+            main { width: 95%; }
+            main .content-wrapper { padding: 1rem; }
+            .profile-image { max-width: 120px; }
+            nav a { display: block; margin: 0.5rem 0; }
+        }
+
     </style>
-    
 </head>
 
 <body>
@@ -163,9 +196,11 @@
     </header>
 
     <main>
-        <h2>Webpage</h2>
-        <p>Nationality: South Korean</p>
-        <p>Majoring: Computer Science</p>
+        <div class="content-wrapper">
+            <h2>Webpage</h2>
+            <p>Nationality: South Korean</p>
+            <p>Majoring: Computer Science</p>
+        </div>
     </main>
 
     <footer>
@@ -181,6 +216,4 @@
 
     <script src="ITIS3135/scripts/HTMLInclude.min.js" defer></script>
 </body>
-
 </html>
-
