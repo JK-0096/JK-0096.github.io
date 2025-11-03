@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Wireframe">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- HEADER -->
+        <mxCell id="header" value="HEADER&#10;[Site Title & Nav Links]" style="rounded=1;fillColor=#D3D3D3;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="600" height="80" as="geometry"/>
+        </mxCell>
+        
+        <!-- MAIN -->
+        <mxCell id="main" value="MAIN&#10;Section Title, Paragraphs, Lists, Examples, Buttons" style="rounded=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="120" width="600" height="300" as="geometry"/>
+        </mxCell>
+        
+        <!-- FOOTER -->
+        <mxCell id="footer" value="FOOTER&#10;Links, Copyright, Validation" style="rounded=1;fillColor=#D3D3D3;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="440" width="600" height="80" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
