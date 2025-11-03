@@ -1,24 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net">
-  <diagram name="Wireframe">
-    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1">
+  <diagram name="Simple Wireframe">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         
-        <!-- HEADER -->
-        <mxCell id="header" value="HEADER&#10;[Site Title & Nav Links]" style="rounded=1;fillColor=#D3D3D3;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="20" width="600" height="80" as="geometry"/>
+        <!-- Header -->
+        <mxCell id="header" value="Header\n(Nav + Logo)" style="rounded=1;fillColor=#d0e1f9;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="960" height="100" as="geometry"/>
         </mxCell>
-        
-        <!-- MAIN -->
-        <mxCell id="main" value="MAIN&#10;Section Title, Paragraphs, Lists, Examples, Buttons" style="rounded=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="20" y="120" width="600" height="300" as="geometry"/>
+
+        <!-- Main Content -->
+        <mxCell id="main" value="Main Content\n(Lessons + Buttons)" style="rounded=1;fillColor=#f9f9d0;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="140" width="960" height="500" as="geometry"/>
         </mxCell>
-        
-        <!-- FOOTER -->
-        <mxCell id="footer" value="FOOTER&#10;Links, Copyright, Validation" style="rounded=1;fillColor=#D3D3D3;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="20" y="440" width="600" height="80" as="geometry"/>
+
+        <!-- Footer -->
+        <mxCell id="footer" value="Footer\n(Links + Validation)" style="rounded=1;fillColor=#f9d0d0;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="660" width="960" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Navigation Placeholder -->
+        <mxCell id="nav" value="Nav Links" style="ellipse;fillColor=#d0f9d9;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="40" width="150" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Lesson Placeholder -->
+        <mxCell id="lesson1" value="Lesson 1: Data Types" style="rounded=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="160" width="200" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lesson2" value="Lesson 2: Variables" style="rounded=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="200" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="lesson3" value="Lesson 3: Math Ops" style="rounded=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="160" width="200" height="100" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
