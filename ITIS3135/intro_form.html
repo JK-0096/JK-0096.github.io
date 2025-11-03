@@ -1,110 +1,114 @@
-<h3>Please submit the form below.</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Introduction Form</h2>
+  
+  <form id="introForm">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label>First Name:
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="First Name" required>
+      </label>
+      <label>Middle Name (optional):
+        <input type="text" id="middleName" name="middleName" placeholder="Enter your middle name or initial">
+      </label>
+      <label>Nickname/Preferred Name (optional):
+        <input type="text" id="nickname" name="nickname" placeholder="Your nickname">
+      </label>
+      <label>Last Name:
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="Last Name" required>
+      </label>
+      <label>Acknowledgment Statement:
+        <input type="text" id="acknowledge" name="acknowledge" placeholder="I acknowledge that..." value="I acknowledge that I will complete my own work." required>
+      </label>
+      <label>Acknowledgment Date:
+        <input type="date" id="ackDate" name="ackDate" required>
+      </label>
+    </fieldset>
 
-<form id="introForm">
-  <fieldset>
-    <legend>Personal Info</legend>
+    <fieldset>
+      <legend>Mascot Info</legend>
+      <label>Mascot Adjective:
+        <input type="text" id="mascotAdj" name="mascotAdj" placeholder="Adjective" value="Joint" required>
+      </label>
+      <label>Mascot Animal:
+        <input type="text" id="mascotAnimal" name="mascotAnimal" placeholder="Animal" value="Komodo" required>
+      </label>
+      <label>Divider:
+        <input type="text" id="divider" name="divider" placeholder="~ | ♥️ etc." value="~" required>
+      </label>
+      <label>Picture:
+        <input type="file" id="picture" name="picture" accept="image/*">
+        <img id="preview" src="images/yourphoto.jpg" alt="Your photo" width="150">
+      </label>
+      <label>Picture Caption:
+        <input type="text" id="caption" name="caption" placeholder="Write a caption..." value="Caption" required>
+      </label>
+    </fieldset>
 
-    <label>First Name:
-      <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="First Name" required>
-    </label>
+    <fieldset>
+      <legend>Personal Statement</legend>
+      <textarea id="statement" name="statement" rows="4" required>I’m passionate about learning and growing as a developer.</textarea>
+    </fieldset>
 
-    <label>Middle Name (optional):
-      <input type="text" id="middleName" name="middleName" placeholder="Enter your middle name or initial">
-    </label>
-
-    <label>Nickname/Preferred Name (optional):
-      <input type="text" id="nickname" name="nickname" placeholder="Your nickname">
-    </label>
-
-    <label>Last Name:
-      <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="Last Name" required>
-    </label>
-
-    <label>Acknowledgment Statement:
-      <input type="text" id="acknowledge" name="acknowledge" placeholder="I acknowledge that..." value="I acknowledge that I will complete my own work." required>
-    </label>
-
-    <label>Acknowledgment Date:
-      <input type="date" id="ackDate" name="ackDate" required>
-    </label>
-  </fieldset>
-
-  <fieldset>
-    <legend>Mascot Info</legend>
-
-    <label>Mascot Adjective:
-      <input type="text" id="mascotAdj" name="mascotAdj" placeholder="Adjective" value="Joint" required>
-    </label>
-
-    <label>Mascot Animal:
-      <input type="text" id="mascotAnimal" name="mascotAnimal" placeholder="Animal" value="Komodo" required>
-    </label>
-
-    <label>Divider:
-      <input type="text" id="divider" name="divider" placeholder="~ | ♥️ etc." value="~" required>
-    </label>
-
-    <label>Picture:
-      <input type="file" id="picture" name="picture" accept="image/*">
-      <img id="preview" src="images/yourphoto.jpg" alt="Your photo" width="150">
-    </label>
-
-    <label>Picture Caption:
-      <input type="text" id="caption" name="caption" placeholder="Write a caption..." value="Caption" required>
-    </label>
-  </fieldset>
-
-  <fieldset>
-    <legend>Personal Statement</legend>
-    <textarea id="statement" name="statement" rows="4" required>I’m passionate about learning and growing as a developer.</textarea>
-  </fieldset>
-
-  <fieldset>
-    <legend>Courses</legend>
-    <div id="courses">
-      <div class="course">
-        <label>Department: <input type="text" name="dept[]" value="ITIS" required></label>
-        <label>Number: <input type="text" name="number[]" value="3135" required></label>
-        <label>Name: <input type="text" name="name[]" value="Web-Based Application Design" required></label>
-        <label>Reason: <input type="text" name="reason[]" value="To learn full-stack web development." required></label>
-        <button type="button" class="deleteCourse">Delete</button>
+    <fieldset>
+      <legend>Courses</legend>
+      <div id="courses">
+        <div class="course">
+          <label>Department: <input type="text" name="dept[]" value="ITIS" required></label>
+          <label>Number: <input type="text" name="number[]" value="3135" required></label>
+          <label>Name: <input type="text" name="name[]" value="Web-Based Application Design" required></label>
+          <label>Reason: <input type="text" name="reason[]" value="To learn full-stack web development." required></label>
+          <button type="button" class="deleteCourse">Delete</button>
+        </div>
       </div>
+      <button type="button" id="addCourse">Add Course</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Quotes</legend>
+      <label>Quote:
+        <input type="text" id="quote" name="quote" value="Strive not to be a success, but rather to be of value." required>
+      </label>
+      <label>Author:
+        <input type="text" id="author" name="author" value="Albert Einstein" required>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Optional Info</legend>
+      <label>Funny Thing (optional):
+        <input type="text" id="funny" name="funny" placeholder="Something funny about me">
+      </label>
+      <label>Something I’d Like to Share (optional):
+        <textarea id="share" name="share" placeholder="Something I’d like to share..."></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Links</legend>
+      <input type="url" name="link1" placeholder="LinkedIn URL" value="https://linkedin.com/in/yourname" required>
+      <input type="url" name="link2" placeholder="GitHub URL" value="https://github.com/yourname" required>
+      <input type="url" name="link3" placeholder="Portfolio URL" value="https://yourportfolio.com" required>
+      <input type="url" name="link4" placeholder="Twitter URL" value="">
+      <input type="url" name="link5" placeholder="Other URL" value="">
+    </fieldset>
+
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button" id="clear">Clear</button>
+      <button type="button" id="generateHTML">Generate HTML</button>
+      <button type="button" id="generateJSON">Generate JSON</button>
     </div>
-    <button type="button" id="addCourse">Add Course</button>
-  </fieldset>
+  </form>
 
-  <fieldset>
-    <legend>Quotes</legend>
-    <label>Quote:
-      <input type="text" id="quote" name="quote" value="Strive not to be a success, but rather to be of value." required>
-    </label>
-    <label>Author: 
-      <input type="text" id="author" name="author" value="Albert Einstein" required>
-    </label>
-  </fieldset>
-
-  <fieldset>
-    <legend>Optional Info</legend>
-    <label>Funny Thing (optional):
-      <input type="text" id="funny" name="funny" placeholder="Something funny about me">
-    </label>
-    <label>Something I’d Like to Share (optional):
-      <textarea id="share" name="share" placeholder="Something I’d like to share..."></textarea>
-    </label>
-  </fieldset>
-
-  <fieldset>
-    <legend>Links</legend>
-    <input type="url" name="link1" placeholder="LinkedIn URL" value="https://linkedin.com/in/yourname" required>
-    <input type="url" name="link2" placeholder="GitHub URL" value="https://github.com/yourname" required>
-    <input type="url" name="link3" placeholder="Portfolio URL" value="https://yourportfolio.com" required>
-    <input type="url" name="link4" placeholder="Twitter URL" value="">
-    <input type="url" name="link5" placeholder="Other URL" value="">
-  </fieldset>
-
-  <div class="buttons">
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-    <button type="button" id="clear">Clear</button>
-  </div>
-</form>
+  <script src="generate_json.js"></script>
+</body>
+</html>
