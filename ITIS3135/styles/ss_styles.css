@@ -1,0 +1,49 @@
+/* ss_styles.css — additional page-specific styles for Structure Starter */
+
+.intro-banner {
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  background:linear-gradient(180deg,#ffffff, #f0fbff);
+  padding:1rem;
+  border-radius:8px;
+  margin-bottom:1rem;
+}
+
+.intro-banner img {
+  width:160px;
+  height:auto;
+  border-radius:6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.lessons-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap:1rem;
+  margin-bottom:1rem;
+}
+
+.lesson-card {
+  background:white;
+  border-radius:8px;
+  padding:0.85rem;
+  border:1px solid #e6f3ff;
+}
+
+.lesson-card h4 { margin-top:0; font-size:1rem; }
+.lesson-card a { color:var(--ss-accent); text-decoration:underline; }
+
+.easter-overlay {
+  position:fixed;
+  inset:0;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+.easter-overlay img {
+  max-width:90%;
+  max-height:90%;
+}

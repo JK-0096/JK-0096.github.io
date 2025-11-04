@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Author: John Kim
+       File: index.html
+       Date: 11/03/2025
+       Description: Home page for Structure Starter project -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structure Starter | Learn JavaScript Basics</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="/ITIS3135/scripts/HTMLInclude.min.js" defer></script>
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main id="home">
+    <section class="intro">
+      <h2>Welcome to Structure Starter!</h2>
+      <p>Learn the basics of JavaScript through short, simple lessons designed for absolute beginners.</p>
+      <img src="images/banner.png" alt="JavaScript learning banner">
+    </section>
+
+    <section class="lessons">
+      <h3>Available Lessons</h3>
+      <ul>
+        <li><a href="data_types.html">Data Types</a></li>
+        <li><a href="variables.html">Variables & Constants</a></li>
+        <li><a href="math_ops.html">Math Operations</a></li>
+        <li><a href="conditionals.html">Conditionals</a></li>
+      </ul>
+    </section>
+
+    <section class="fun">
+      <h3>Bonus</h3>
+      <button id="easterEggBtn">Click me for a surprise!</button>
+    </section>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+</body>
+</html>

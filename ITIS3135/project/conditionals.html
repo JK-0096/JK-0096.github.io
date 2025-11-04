@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Author: John Kim | File: conditionals.html -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structure Starter | Conditionals</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="/ITIS3135/scripts/HTMLInclude.min.js" defer></script>
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <h2>Conditionals (if, else if, else)</h2>
+    <p>Conditionals execute code blocks depending on specific conditions.</p>
+
+    <pre><code>
+let num = 5;
+if (num > 0) {
+  console.log("Positive");
+} else if (num < 0) {
+  console.log("Negative");
+} else {
+  console.log("Zero");
+}
+    </code></pre>
+
+    <section>
+      <h3>Try It Yourself:</h3>
+      <input type="number" id="userNum" placeholder="Enter a number">
+      <button onclick="checkNumber()">Check</button>
+      <p id="result"></p>
+    </section>
+
+    <figure>
+      <img src="images/conditionals_example.png" alt="Conditional flow example">
+    </figure>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+</body>
+</html>
