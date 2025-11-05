@@ -3,29 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mathematical Operations</title>
+  <title>Loops</title>
   <link rel="stylesheet" href="../styles/project_styles.css">
 </head>
 
 <body>
   <header>
     <div data-include="../components/header.html"></div>
-    <h1>Basic Mathematical Operations</h1>
+    <h1>Loops</h1>
   </header>
 
   <main>
-    <p>JavaScript can perform math just like a calculator:</p>
+    <p>Loops repeat code multiple times. The <code>for</code> loop is one of the most common:</p>
 
-    <pre><code>let x = 10;
-let y = 5;
-
-let sum = x + y;        // 15
-let difference = x - y; // 5
-let product = x * y;    // 50
-let quotient = x / y;   // 2
+    <pre><code>for (let i = 1; i <= 5; i++) {
+  console.log("Count: " + i);
+}
 </code></pre>
 
-    <p>You can display results using <code>console.log(sum)</code> in your browser’s developer console.</p>
+    <p>This will print the numbers 1 through 5 in your browser’s console.</p>
   </main>
 
   <footer>

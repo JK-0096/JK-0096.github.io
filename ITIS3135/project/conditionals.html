@@ -1,45 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Author: John Kim | File: conditionals.html -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Structure Starter | Conditionals</title>
-  <link rel="stylesheet" href="styles/default.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/main.js" defer></script>
-  <script src="/ITIS3135/scripts/HTMLInclude.min.js" defer></script>
+  <title>Conditionals</title>
+  <link rel="stylesheet" href="../styles/project_styles.css">
 </head>
+
 <body>
-  <div data-include="components/header.html"></div>
+  <header>
+    <div data-include="../components/header.html"></div>
+    <h1>Conditionals</h1>
+  </header>
 
   <main>
-    <h2>Conditionals (if, else if, else)</h2>
-    <p>Conditionals execute code blocks depending on specific conditions.</p>
+    <p>Conditionals let your code make decisions using <code>if</code>, <code>else if</code>, and <code>else</code>.</p>
 
-    <pre><code>
-let num = 5;
-if (num > 0) {
-  console.log("Positive");
-} else if (num < 0) {
-  console.log("Negative");
+    <pre><code>let age = 18;
+
+if (age < 13) {
+  console.log("You are a child");
+} else if (age < 18) {
+  console.log("You are a teenager");
 } else {
-  console.log("Zero");
+  console.log("You are an adult");
 }
-    </code></pre>
+</code></pre>
 
-    <section>
-      <h3>Try It Yourself:</h3>
-      <input type="number" id="userNum" placeholder="Enter a number">
-      <button onclick="checkNumber()">Check</button>
-      <p id="result"></p>
-    </section>
-
-    <figure>
-      <img src="images/conditionals_example.png" alt="Conditional flow example">
-    </figure>
+    <p>You can also use logical operators like <code>&&</code> (and) and <code>||</code> (or) to combine conditions.</p>
   </main>
 
-  <div data-include="components/footer.html"></div>
+  <footer>
+    <div data-include="../components/footer.html"></div>
+  </footer>
 </body>
 </html>

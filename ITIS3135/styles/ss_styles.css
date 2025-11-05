@@ -1,49 +1,66 @@
-/* ss_styles.css — additional page-specific styles for Structure Starter */
-
-.intro-banner {
-  display:flex;
-  gap:1rem;
-  align-items:center;
-  background:linear-gradient(180deg,#ffffff, #f0fbff);
-  padding:1rem;
-  border-radius:8px;
-  margin-bottom:1rem;
+/* ✅ Remove navigation bullets */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.intro-banner img {
-  width:160px;
-  height:auto;
-  border-radius:6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+nav li {
+  list-style-type: none;
 }
 
-.lessons-grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-  gap:1rem;
-  margin-bottom:1rem;
+/* Lesson tabs (also no bullets) */
+.lesson-tabs {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
 }
 
-.lesson-card {
-  background:white;
-  border-radius:8px;
-  padding:0.85rem;
-  border:1px solid #e6f3ff;
+.lesson-tabs li {
+  margin: 0.5rem 0;
 }
 
-.lesson-card h4 { margin-top:0; font-size:1rem; }
-.lesson-card a { color:var(--ss-accent); text-decoration:underline; }
-
-.easter-overlay {
-  position:fixed;
-  inset:0;
-  background:black;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
+.lesson-tabs a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
 }
-.easter-overlay img {
-  max-width:90%;
-  max-height:90%;
+
+.lesson-tabs a:hover {
+  text-decoration: underline;
+}
+
+/* Easter egg overlay */
+#creepyOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url('/JK-0096.GITHUB.IO/ITIS3135/images/creepypasta.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 9999;
+}
+
+#creepyButton {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#creepyButton:hover {
+  background-color: #005fa3;
 }

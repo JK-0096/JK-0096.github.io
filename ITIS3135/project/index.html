@@ -1,55 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Structure Starter | Home</title>
-  <link rel="stylesheet" href="../styles/project_styles.css">
-  <script src="../scripts/main.js" defer></script>
-  <script src="../scripts/HTMLInclude.min.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Learning Site</title>
+  <link rel="stylesheet" href="../styles/ss_styles.css">
 </head>
 <body>
-  <header>
-    <div data-include="../components/header.html"></div>
-    <h1>Structure Starter</h1>
-    <p class="subtitle">Learn JavaScript Basics Step-by-Step</p>
-  </header>
-
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="data_types.html">Data Types</a></li>
-      <li><a href="variables.html">Variables & Constants</a></li>
-      <li><a href="math_ops.html">Math Operations</a></li>
-      <li><a href="conditionals.html">Conditionals</a></li>
-      <li><a href="loops.html">Loops</a></li>
-    </ul>
-  </nav>
+  <div data-include="../components/ss_header.html"></div>
 
   <main>
     <section>
-      <h2>Welcome to Structure Starter</h2>
-      <p>This site helps beginners understand key JavaScript concepts through simple explanations and examples. Explore each topic to learn and experiment with code in your browser.</p>
-      <img src="../images/js_logo.png" alt="JavaScript logo" class="hero-img">
-    </section>
-
-    <section id="topics">
-      <h3>Topics Covered</h3>
+      <h2>Welcome to JavaScript Basics</h2>
+      <p>This site introduces beginner-friendly JavaScript topics. Choose a lesson below:</p>
       <ul>
         <li><a href="data_types.html">Data Types</a></li>
         <li><a href="variables.html">Variables & Constants</a></li>
-        <li><a href="math_ops.html">Mathematical Operations</a></li>
+        <li><a href="math_ops.html">Basic Math Operations</a></li>
         <li><a href="conditionals.html">Conditionals</a></li>
         <li><a href="loops.html">Loops</a></li>
       </ul>
     </section>
 
-    <button id="easter-egg">Activate Secret Mode</button>
-    <div id="overlay"></div>
+    <button id="creepButton">Dark Mode Surprise</button>
+    <img id="creepImage" src="../images/creepypasta.png" alt="creepy" />
   </main>
 
-  <footer>
-    <div data-include="../components/footer.html"></div>
-  </footer>
+  <div data-include="../components/ss_footer.html"></div>
+
+  <script src="../scripts/HTMLInclude.min.js" defer></script>
+  <script src="../scripts/ss_main.js" defer></script>
 </body>
 </html>

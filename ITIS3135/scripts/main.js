@@ -27,6 +27,16 @@ function setupNavLinks() {
 document.addEventListener('DOMContentLoaded', () => {
     displayGreeting(); 
     setupNavLinks();
+
+    // Easter egg toggle setup
+    const btn = document.getElementById("easter-egg");
+    const overlay = document.getElementById("overlay");
+
+    if (btn && overlay) {
+        btn.addEventListener("click", () => {
+            overlay.style.display = overlay.style.display === "block" ? "none" : "block";
+        });
+    }
 });
 
 document.body.addEventListener('click', () => {
