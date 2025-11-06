@@ -13,6 +13,7 @@ function changeBackgroundColor(color) {
   document.body.style.backgroundColor = color;
 }
 
+// Setup hover effect for footer nav links
 function setupNavLinks() {
   const navLinks = document.querySelectorAll('footer nav a');
   navLinks.forEach((link) => {
@@ -26,14 +27,27 @@ function setupNavLinks() {
   });
 }
 
+// Highlight the current page in the header navigation
+function highlightCurrentPage() {
+  const headerLinks = document.querySelectorAll('header nav a');
+  headerLinks.forEach(link => {
+    // Compare link href with current page URL
+    if (link.href === window.location.href) {
+      link.classList.add('current');
+    }
+  });
+}
+
 // Dark Mode Surprise toggle
-document.getElementById('creepButton').addEventListener('click', () => {
+document.getElementById('creepButton')?.addEventListener('click', () => {
   document.body.style.backgroundColor = "black";
   const creepImage = document.getElementById('creepImage');
-  creepImage.style.display = "block";
+  if (creepImage) creepImage.style.display = "block";
 });
 
+// Run functions after DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   displayGreeting();
   setupNavLinks();
+  highlightCurrentPage();
 });
