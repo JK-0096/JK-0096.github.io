@@ -1,3 +1,4 @@
+/* General reset and box-sizing */
 *,
 *::before,
 *::after {
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* Set a soft background color */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -13,6 +15,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header navigation styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -49,10 +52,12 @@ nav a:active {
     background-color: #1f6b99;
 }
 
+/* Current tab highlight */
 .current {
     background-color: #1f6b99;
 }
 
+/* Main content styling */
 main {
     max-width: 1000px;
     margin: 20px auto;
@@ -66,6 +71,7 @@ section {
     margin-bottom: 20px;
 }
 
+/* Headings */
 h2 {
     color: #333;
     font-weight: 600;
@@ -80,6 +86,7 @@ h3 {
     font-size: 1.5rem;
 }
 
+/* Paragraphs */
 p {
     margin-bottom: 20px;
     font-size: 1rem;
@@ -87,6 +94,7 @@ p {
     color: #666;
 }
 
+/* List styling */
 ul {
     list-style-type: square;
     margin-left: 20px;
@@ -98,6 +106,7 @@ ul li {
     color: #555;
 }
 
+/* Code styling */
 pre code {
     background-color: #e5e5e5;
     padding: 10px;
@@ -107,6 +116,7 @@ pre code {
     overflow-x: auto;
 }
 
+/* Mobile-friendly adjustments */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -121,6 +131,7 @@ pre code {
     }
 }
 
+/* Footer styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -140,6 +151,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Hidden button styles */
 button.hidden {
     color: black;
     background-color: black;
