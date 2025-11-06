@@ -1,22 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conditionals</title>
-  <link rel="stylesheet" href="../styles/project_styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditionals | JavaScript Learning Site</title>
+  <link rel="stylesheet" href="../styles/ss_styles.css">
 </head>
-
 <body>
-  <header>
-    <div data-include="../components/header.html"></div>
-    <h1>Conditionals</h1>
-  </header>
+  <!-- Include header -->
+  <div data-include="../components/ss_header.html"></div>
 
   <main>
-    <p>Conditionals let your code make decisions using <code>if</code>, <code>else if</code>, and <code>else</code>.</p>
+    <section>
+      <h2>Conditionals</h2>
+      <p>Conditionals let your code make decisions using <code>if</code>, <code>else if</code>, and <code>else</code>.</p>
 
-    <pre><code>let age = 18;
+      <h3>Example:</h3>
+      <pre><code>let age = 18;
 
 if (age < 13) {
   console.log("You are a child");
@@ -27,11 +27,15 @@ if (age < 13) {
 }
 </code></pre>
 
-    <p>You can also use logical operators like <code>&&</code> (and) and <code>||</code> (or) to combine conditions.</p>
+      <p>You can also use logical operators like <code>&&</code> (and) and <code>||</code> (or) to combine conditions.</p>
+    </section>
   </main>
 
-  <footer>
-    <div data-include="../components/footer.html"></div>
-  </footer>
+  <!-- Include footer -->
+  <div data-include="../components/ss_footer.html"></div>
+
+  <!-- Include external JS files -->
+  <script src="../scripts/HTMLInclude.min.js" defer></script>
+  <script src="../scripts/ss_main.js" defer></script>
 </body>
 </html>

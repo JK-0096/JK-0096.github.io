@@ -1,34 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Variables and Constants</title>
-  <link rel="stylesheet" href="../styles/project_styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variables & Constants | JavaScript Learning Site</title>
+  <link rel="stylesheet" href="../styles/ss_styles.css">
 </head>
-
 <body>
-  <header>
-    <div data-include="../components/header.html"></div>
-    <h1>Variables & Constants</h1>
-  </header>
+  <!-- Include header -->
+  <div data-include="../components/ss_header.html"></div>
 
   <main>
-    <p>In JavaScript, you use variables to store information. You can declare them using <code>let</code> or <code>const</code>.</p>
+    <section>
+      <h2>Variables & Constants</h2>
+      <p>In JavaScript, you use variables to store information. You can declare them using <code>let</code> or <code>const</code>.</p>
 
-    <h3>Examples:</h3>
-    <pre><code>let name = "Alex";
+      <h3>Examples:</h3>
+      <pre><code>let name = "Alex";
 const birthYear = 2000;
 </code></pre>
 
-    <ul>
-      <li><strong>let</strong> allows you to change the value later.</li>
-      <li><strong>const</strong> cannot be changed once it’s set.</li>
-    </ul>
+      <ul>
+        <li><strong>let</strong> allows you to change the value later.</li>
+        <li><strong>const</strong> cannot be changed once it’s set.</li>
+      </ul>
+    </section>
   </main>
 
-  <footer>
-    <div data-include="../components/footer.html"></div>
-  </footer>
+  <!-- Include footer -->
+  <div data-include="../components/ss_footer.html"></div>
+
+  <!-- Include external JS files -->
+  <script src="../scripts/HTMLInclude.min.js" defer></script>
+  <script src="../scripts/ss_main.js" defer></script>
 </body>
 </html>
