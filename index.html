@@ -7,184 +7,154 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: "Bebas Neue", "Oswald", "Montserrat", "Segoe UI", Arial, sans-serif;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-shadow: 0 2px 4px rgba(50, 119, 204, 0.12);
-            line-height: 1.6;
-            background-color: #f5f9ff;
-            color: #1a1a1a;
-        }
+    /* Page Background and Font */
+    body {
+        font-family: "Bebas Neue", "Oswald", "Montserrat", "Segoe UI", Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-shadow: 0 2px 4px rgba(50, 119, 204, 0.12);
+        line-height: 1.6;
+        background-color: #f5f9ff; /* very light blue background */
+        color: #1a1a1a;
+        margin: 0;
+    }
 
-        header {
-            background: #0077cc;
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-            border-bottom: 5px solid #0077cc;
-        }
+    /* Header */
+    header {
+        background: #0077cc; /* navy blue */
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        border-bottom: 5px solid #0077cc; /* lighter blue accent */
+    }
 
-        h1 {
-            font-size: clamp(1.6rem, 2vw + 1rem, 2.2rem);
-            margin-bottom: 0.5rem;
-        }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
 
-        header .tagline {
-            font-style: italic;
-            font-size: 1.1rem;
-            color: #cce6ff;
-        }
+    header .tagline {
+        font-style: italic;
+        font-size: 1.1rem;
+        color: #cce6ff; /* soft blue */
+    }
 
-        main {
-            max-width: 1200px;
-            width: 90%;
-            margin: 2rem auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+    /* Main Content */
+    main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-        main .content-wrapper {
-            padding: 1.5rem; /* padding moved here to avoid width+padding issues */
-        }
+    h2 {
+        color: #0077cc;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #0077cc;
+        padding-bottom: 0.3rem;
+    }
 
-        h2 {
-            color: #0077cc;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #0077cc;
-            padding-bottom: 0.3rem;
-            font-size: clamp(1.3rem, 1.5vw + 1rem, 1.8rem); /* responsive font-size */
-        }
+    main section {
+        margin-bottom: 1.5rem;
+    }
 
-        main section {
-            margin-bottom: 1.5rem;
-        }
+    h3 {
+        color: #0077cc;
+        margin-bottom: 0.5rem;
+    }
 
-        h3 {
-            color: #0077cc;
-            margin-bottom: 0.5rem;
-        }
+    main p, main ul {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
 
-        main p, main ul {
-            margin-left: 0.5rem;
-            font-size: 1rem;
-        }
+    /* Lists */
+    ul {
+        list-style: square inside;
+        margin-left: 1rem;
+    }
 
-        ul {
-            list-style: square inside;
-            margin-left: 1rem;
-        }
+    /* Image Styling */
+    .profile-image {
+        display: block;
+        max-width: 200px;
+        margin: 1rem auto;
+        border-radius: 50%;
+        border: 4px solid #0077cc;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-        .profile-image {
-            display: block;
-            max-width: 200px;
-            margin: 1rem auto;
-            border-radius: 50%;
-            border: 4px solid #0077cc;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
+    /* Footer */
+    footer {
+        background: #0077cc;
+        color: white;
+        text-align: center;
+        padding: 1.2rem;
+        margin-top: 2rem;
+        border-top: 5px solid #0077cc;
+    }
 
-        footer {
-            background: #0077cc;
-            color: white;
-            text-align: center;
-            padding: 1.2rem;
-            margin-top: 2rem;
-            border-top: 5px solid #0077cc;
-        }
+    footer nav ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0.5rem;
+    }
 
-        footer nav ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 0.5rem;
-        }
+    footer nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
 
-        footer nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
+    footer nav ul li a {
+        color: #cce6ff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
 
-        footer nav ul li a {
-            color: #cce6ff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+    footer nav ul li a:hover {
+        color: white;
+        text-decoration: underline;
+    }
 
-        footer nav ul li a:hover {
-            color: white;
-            text-decoration: underline;
-        }
+    footer .validation-links a {
+        display: inline-block;
+        margin: 0 0.5rem;
+        color: #cce6ff;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
 
-        footer .validation-links a {
-            display: inline-block;
-            margin: 0 0.5rem;
-            color: #cce6ff;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
+    footer .validation-links a:hover {
+        color: white;
+    }
 
-        footer .validation-links a:hover {
-            color: white;
-        }
+    /* Copyright */
+    footer p {
+        margin-top: 0.8rem;
+        font-weight: bold;
+        color: #cce6ff;
+    }
 
-        footer p {
-            margin-top: 0.8rem;
-            font-weight: bold;
-            color: #cce6ff;
-        }
+    a {
+        color: #32cd32; /* lime green */
+        transition: color 0.3s ease;
+    }
 
-        a {
-            color: #32cd32;
-            transition: color 0.3s ease;
-        }
+    a:active {
+        color: #ff1a1a; /* bright red */
+    }
 
-        a:active {
-            color: #ff1a1a;
-        }
-
-        a:visited {
-            color: #ffe600;
-        }
-
-        nav a {
-            display: inline-block;
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #0077cc;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media Queries */
-
-        @media screen and (min-width: 981px) and (max-width: 1400px) {
-            main { width: 85%; }
-            main .content-wrapper { padding: 2rem; }
-            .profile-image { max-width: 180px; }
-        }
-
-        @media screen and (min-width: 601px) and (max-width: 980px) {
-            main { width: 90%; }
-            main .content-wrapper { padding: 1.5rem; }
-            .profile-image { max-width: 150px; }
-            nav a { display: block; margin: 0.5rem 0; }
-        }
-
-        @media screen and (min-width: 370px) and (max-width: 600px) {
-            main { width: 95%; }
-            main .content-wrapper { padding: 1rem; }
-            .profile-image { max-width: 120px; }
-            nav a { display: block; margin: 0.5rem 0; }
-        }
+    a:visited {
+        color: #ffe600; /* bright yellow */
+    }
 
     </style>
 </head>
@@ -195,7 +165,13 @@
         <nav>
             <a href="index.html">Home</a> || 
             <a href="ITIS3135/introduction.html">Introduction</a> || 
-            <a href="ITIS3135/contract.html">Contract</a>
+            <a href="ITIS3135/contract.html">Contract</a> ||
+            <a href="https://itis3135-react-silk.vercel.app/">React3</a> ||
+            <a href="stuff/ROCK&YOU.htm">Crappy Webpage Assignment</a> ||
+            <a href="hobby/index.html">Hobby Webpage Assignment</a> ||
+            <a href="intro_form.html">Intro Form</a> ||
+            <a href="fccfsjs_outline.html">FCC Full Stack JS Outline</a> ||
+            <a href="project/index.html">JavaScript Learning Site Project</a>
         </nav>
     </header>
 
@@ -215,7 +191,7 @@
             <a href="https://www.freecodecamp.org/jk-0096">freeCodeCamp</a> ||
             <a href="https://www.codecademy.com/profiles/JK-0096">Codecademy</a> ||
             <a href="https://www.linkedin.com/feed/">LinkedIn</a> ||
-            <a href="/ITIS3135/website_evalutations.html">Website Evaluations</a>
+            <a href="ITIS3135/website_evalutations.html">Website Evaluations</a>
         </nav>
 
         <p>Page built by <a href="https://webpages.charlotte.edu/ykim87/ITIS3135/jointkomodo.com/index.html">Joint Komodo</a> ©2025</p>
@@ -226,15 +202,6 @@
             <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a>
         </div>
     </footer>
-
-    <nav>
-        <a href="ITIS3135/stuff/ROCK&YOU.htm">Crappy Webpage Assignment</a>
-        <a href="ITIS3135/hobby/index.html">Hobby Webpage Assignment</a>
-        <a href="ITIS3135/intro_form.html">Intro Form</a>
-        <a href="ITIS3135/fccfsjs_outline.html">FCC Full Stack JS Outline</a>
-        <a href="ITIS3135/project_overview.html">Project Overview</a>
-        <a href="ITIS3135/project/index.html">JavaScript Learning Site Project</a>
-    </nav>
 
     <script src="ITIS3135/scripts/HTMLInclude.min.js" defer></script>
 </body>
