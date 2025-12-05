@@ -2,10 +2,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* includes padding/border in width/height */
+    box-sizing: border-box;
 }
 
-/* Page Background and Font */
+/* Body & Text */
 body {
     font-family: "Bebas Neue", "Oswald", "Montserrat", "Segoe UI", Arial, sans-serif;
     font-weight: 700;
@@ -25,18 +25,9 @@ header {
     border-bottom: 5px solid #0077cc;
 }
 
-/* Headings */
 h1 {
     font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
     margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: clamp(1.2rem, 1.5vw + 0.8rem, 1.6rem);
-    color: #0077cc;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 0.3rem;
 }
 
 header .tagline {
@@ -45,43 +36,26 @@ header .tagline {
     color: #cce6ff;
 }
 
-/* Main Content */
+/* Main content */
 main {
     max-width: 1200px;
+    margin: 2rem auto;
     padding: 1.5rem;
-    margin: 2rem auto 0 auto;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Sections */
-main section {
-    margin-bottom: 1.5rem;
-}
-
-h3 {
+h2 {
     color: #0077cc;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 0.3rem;
 }
 
-main p,
-main ul {
-    margin-left: 0.5rem;
-    font-size: 1rem;
-}
-
-/* Lists */
-ul {
-    list-style: square inside;
-    margin-left: 1rem;
-}
-
-/* Profile Image */
 .profile-image {
     display: block;
     max-width: 200px;
-    width: auto;
     margin: 1rem auto;
     border-radius: 50%;
     border: 4px solid #0077cc;
@@ -90,42 +64,27 @@ ul {
 
 /* Footer */
 footer {
-    padding: 1.2rem;
-    margin-top: 2rem;
     background: #0077cc;
     color: white;
     text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
     border-top: 5px solid #0077cc;
 }
 
-/* Footer nav */
-footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-
-footer nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-footer nav ul li a {
+footer nav a {
     color: #cce6ff;
     text-decoration: none;
+    margin: 0 0.5rem;
     transition: color 0.3s ease;
 }
 
-footer nav ul li a:hover {
+footer nav a:hover {
     color: white;
     text-decoration: underline;
 }
 
-/* Footer validation links */
 footer .validation-links a {
-    display: inline-block;
-    margin: 0 0.5rem;
     color: #cce6ff;
     text-decoration: none;
     font-size: 0.9rem;
@@ -146,40 +105,21 @@ a {
     color: #32cd32; /* lime green */
     transition: color 0.3s ease;
 }
-
 a:active {
-    color: #ff1a1a; /* bright red */
+    color: #ff1a1a;
 }
-
 a:visited {
-    color: #ffe600; /* bright yellow */
+    color: #ffe600;
 }
 
-/* Responsive - Tablets */
+/* Responsive */
 @media screen and (max-width: 980px) {
-    main {
-        max-width: 95%;
-        padding: 1rem;
-    }
+    main { max-width: 95%; padding: 1rem; }
 }
-
-/* Responsive - Mobile */
 @media screen and (max-width: 600px) {
-    header {
-        padding: 1.5rem 0.5rem;
-    }
-    header .tagline {
-        font-size: 1rem;
-    }
-    main {
-        max-width: 98%;
-        padding: 1rem;
-    }
-    .profile-image {
-        max-width: 150px;
-    }
-    footer nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
+    header { padding: 1.5rem 0.5rem; }
+    header .tagline { font-size: 1rem; }
+    main { max-width: 98%; padding: 1rem; }
+    .profile-image { max-width: 150px; }
+    footer nav a { display: block; margin: 0.5rem 0; }
 }
