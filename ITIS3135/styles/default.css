@@ -73,24 +73,27 @@ footer {
 }
 
 footer nav a {
-    color: #cce6ff;
+    color: #99d6ff;
     text-decoration: none;
     margin: 0 0.5rem;
     transition: color 0.3s ease;
 }
 
-footer nav a:hover {
+footer nav a:hover,
+footer nav a:focus {
     color: white;
     text-decoration: underline;
+    outline: 2px solid #ffffff;
 }
 
 footer .validation-links a {
-    color: #cce6ff;
+    color: #99d6ff;
     text-decoration: none;
     font-size: 0.9rem;
 }
 
-footer .validation-links a:hover {
+footer .validation-links a:hover,
+footer .validation-links a:focus {
     color: white;
 }
 
@@ -110,6 +113,9 @@ a:active {
 }
 a:visited {
     color: #ffe600;
+}
+a:focus {
+    outline: 2px solid #32cd32;
 }
 
 /* Responsive */
